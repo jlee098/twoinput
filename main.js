@@ -197,7 +197,7 @@ function displayImage() {
     }
     // if inputs are neither, show fail image
     else {
-        imgElement27.src = "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdWx2NnlvN3RocHVya2d3cXB5b2V0bXRqNXhyMGZkZG4wd3Zpdm13NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/o75ajIFH0QnQC3nCeD/giphy.gif";
+        imgElement27.src = "photosfortwoinput/fail.JPG";
         imgElement27.style.display = "block"; // Show the image
     }
 }

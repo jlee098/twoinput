@@ -1,0 +1,187 @@
+ /* STYLE FOR THE INPUT FIELD */
+ #charInput1 {
+     width: 200px;
+     height: 200px;
+     font-size: 60px;
+     text-align: center;
+     margin: 5px;
+     margin-top: 5em;
+     border: 2px solid #ccc;
+     border-radius: 20px;
+     outline: none;
+     transition: 0.3s;
+     background-color: #fff;
+     z-index: 4;
+ }
+
+ #charInput2 {
+     width: 200px;
+     height: 200px;
+     font-size: 60px;
+     text-align: center;
+     margin: 5px;
+     border: 2px solid #ccc;
+     border-radius: 20px;
+     outline: none;
+     transition: 0.3s;
+     background-color: #fff;
+     z-index: 4;
+ }
+
+ /* STYLE FOR THE SUBMIT BUTTON */
+ #submitButton {
+     border: none;
+     padding: 10px 20px;
+     font-size: 16px;
+     margin: 30px;
+     border-radius: 10px;
+     cursor: pointer;
+     transition: 0.3s;
+     z-index: 4;
+     align-items: center;
+ }
+
+ /* STYLE FOR THE IMAGE */
+ #displayedImage1,
+ #displayedImage2,
+ #displayedImage3,
+ #displayedImage4,
+ #displayedImage5,
+ #displayedImage6,
+ #displayedImage7,
+ #displayedImage8,
+ #displayedImage9,
+ #displayedImage10,
+ #displayedImage11,
+ #displayedImage12,
+ #displayedImage13,
+ #displayedImage14,
+ #displayedImage15,
+ #displayedImage16,
+ #displayedImage17,
+ #displayedImage18,
+ #displayedImage19,
+ #displayedImage20,
+ #displayedImage21,
+ #displayedImage22,
+ #displayedImage23,
+ #displayedImage24,
+ #displayedImage25,
+ #displayedImage26,
+ #displayedImage27 {
+     display: none;
+     width: 52%;
+     margin-top: -29em;
+     max-height: 93vh;
+     object-fit: contain;
+     margin-left: 48.8em;
+     transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+     z-index: 5;
+ }
+
+ .show-image {
+     opacity: 1;
+     visibility: visible;
+ }
+
+ body {
+     background-color: rgb(220, 219, 211);
+     overflow-x: hidden;
+     overflow-y: hidden;
+ }
+
+ .title {
+     font-size: 1.25em;
+     color: rgb(70, 70, 70);
+     position: absolute;
+     top: 15px;
+     margin-left: 60rem;
+     width: auto;
+     height: auto;
+     z-index: 7;
+     font-family: "roboto", sans-serif;
+     font-weight: 500;
+     font-style: normal;
+ }
+
+ .red {
+     width: 15px;
+     height: 15px;
+     background-color: red;
+     border-radius: 50%;
+     display: inline-block;
+     z-index: 999;
+     position: absolute;
+     top: 19px;
+     /* Position inside grey bar */
+     left: 54.5em;
+     /* Adjust for alignment */
+ }
+
+ .yellow {
+     width: 15px;
+     height: 15px;
+     background-color: darkorange;
+     border-radius: 50%;
+     display: inline-block;
+     z-index: 999;
+     position: absolute;
+     top: 19px;
+     left: 56em;
+
+ }
+
+ .green {
+     width: 15px;
+     height: 15px;
+     background-color: limegreen;
+     border-radius: 50%;
+     display: inline-block;
+     z-index: 999;
+     position: absolute;
+     top: 19px;
+     left: 57.5em;
+ }
+
+ .greybar {
+     top: 0;
+     left: 53em;
+     width: 100vw;
+     height: 55px;
+     background: lightgrey;
+     position: fixed;
+     z-index: 5;
+     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+ }
+
+ .greycolumnleft {
+     top: 0;
+     margin-left: 52.5em;
+     width: 65px;
+     height: 100vh;
+     background: grey;
+     position: absolute;
+     z-index: 1;
+     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+ }
+
+ .greycolumnright {
+     top: 0;
+     right: 0;
+     width: 65px;
+     height: 100vh;
+     background: grey;
+     position: absolute;
+     z-index: 2;
+     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+ }
+
+ .instructions {
+     font-family: "roboto", sans-serif;
+     font-weight: 500;
+     font-style: normal;
+     font-size: 1.9em;
+     margin-top: 1em;
+     position: absolute;
+     margin-left: 10px;
+ }

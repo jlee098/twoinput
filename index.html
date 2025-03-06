@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://use.typekit.net/fly8ful.css">
-
-    <title>foodpluschristine</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tiny5&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     <script src="main.js" defer></script>
 
@@ -16,56 +14,93 @@
 
 <body>
 
+    <div class="bottomscreen">
+        <input type="text" id="charInput1" maxlength="1">
+        <p>Food</p>
+        <input type="text" id="charInput2" maxlength="1">
+        <p>Preparation</p>
+        <button id="submitButton" onclick="displayImage()">Place Your Order!</button>
+    </div>
+
     <!-- INPUT FIELD FOR 1 CHARACTER -->
-    <input type="text" id="charInput1" maxlength="1">
-    <input type="text" id="charInput2" maxlength="1">
+    <!-- <input type="text" id="charInput1" maxlength="1">
+    <input type="text" id="charInput2" maxlength="1"> -->
 
     <!-- BUTTON TO DISPLAY IMAGE -->
-    <button onclick="displayImage()" id="orderup!">click for christine!...or food</button>
+    <!-- <button onclick="displayImage()" id="place your order">place your order!</button> -->
 
     <!-- IMAGE TO DISPLAY -->
-    <img id="displayedImage1" src="photosfortwoinput/fc1.JPG" alt="ab">
-    <img id="displayedImage2" src="photosfortwoinput/fc1v.JPG" alt="ba">
-    <img id="displayedImage3" src="photosfortwoinput/fc2.JPG" alt="cd">
-    <img id="displayedImage4" src="photosfortwoinput/fc2v.JPG" alt="dc">
-    <img id="displayedImage5" src="photosfortwoinput/fc3.JPG" alt="ef">
-    <img id="displayedImage6" src="photosfortwoinput/fc3v.JPG" alt="fe">
-    <img id="displayedImage7" src="photosfortwoinput/fc4.JPG" alt="gh">
-    <img id="displayedImage8" src="photosfortwoinput/fc4v.JPG" alt="hg">
-    <img id="displayedImage9" src="photosfortwoinput/fc5.JPG" alt="ij">
-    <img id="displayedImage10" src="photosfortwoinput/fc5v.JPG" alt="ji">
-    <img id="displayedImage11" src="photosfortwoinput/fc6.JPG" alt="kl">
-    <img id="displayedImage12" src="photosfortwoinput/fc6v.JPG" alt="lk">
-    <img id="displayedImage13" src="photosfortwoinput/fc7.JPG" alt="mn">
-    <img id="displayedImage14" src="photosfortwoinput/fc7v.JPG" alt="nm">
-    <img id="displayedImage15" src="photosfortwoinput/fc8.JPG" alt="op">
-    <img id="displayedImage16" src="photosfortwoinput/fc8v.JPG" alt="po">
-    <img id="displayedImage17" src="photosfortwoinput/fc9.JPG" alt="qr">
-    <img id="displayedImage18" src="photosfortwoinput/fc9v.JPG" alt="rq">
-    <img id="displayedImage19" src="photosfortwoinput/fc10.JPG" alt="st">
-    <img id="displayedImage20" src="photosfortwoinput/fc10v.JPG" alt="ts">
-    <img id="displayedImage21" src="photosfortwoinput/fc11.JPG" alt="uv">
-    <img id="displayedImage22" src="photosfortwoinput/fc11v.JPG" alt="vu">
-    <img id="displayedImage23" src="photosfortwoinput/fc12.JPG" alt="wx">
-    <img id="displayedImage24" src="photosfortwoinput/fc12v.JPG" alt="xw">
-    <img id="displayedImage25" src="photosfortwoinput/fc13.jpeg" alt="yz">
-    <img id="displayedImage26" src="photosfortwoinput/fc13v.jpeg" alt="zy">
-    <img id="displayedImage27" src="photosfortwoinput/fail.JPG" alt="fail">
-
-    <div class="title">
-        food with christine!
+    <div class="image-container">
+        <img id="displayedImage1" src="cookingmama/fruitbaked.jpeg" alt="fruitbaked">
+        <div class="image-text" id="text1">Fruit tart!</div>
     </div>
-    <div class="greybar"></div>
-    <div class="greycolumnleft"></div>
-    <div class="greycolumnright"></div>
-    <div class="red"></div>
-    <div class="yellow"></div>
-    <div class="green"></div>
-
-    <div class="instructions">
-        start with a + b and vice versa. <br> only use letters that are next to each other alphabetically. <br> * ex.
-        ab/ba, cd/dc, etc.
+    <div class="image-container">
+        <img id="displayedImage2" src="cookingmama/fruitsimmered.jpeg" alt="fruitsimmered">
+        <div class="image-text" id="text2">Fruit jam!</div>
     </div>
+    <div class="image-container">
+        <img id="displayedImage3" src="cookingmama/meatgrilled.jpeg" alt="meatgrilled">
+        <div class="image-text" id="text3">Grilled meat!</div>
+    </div>
+    <div class="image-container">
+        <img id="displayedImage4" src="cookingmama/meatballssimmeredoption.jpeg" alt="meatsimmered">
+        <div class="image-text" id="text4">Meatballs!</div>
+    </div>
+    <div class="image-container">
+        <img id="displayedImage5" src="cookingmama/meatbaked.jpeg" alt="meatbaked">
+        <div class="image-text" id="text5">Meatloaf!</div>
+    </div>
+    <div class="image-container">
+        <img id="displayedImage6" src="cookingmama/meatfried.jpeg" alt="meatfried">
+        <div class="image-text" id="text6">Assorted fried meats!</div>
+    </div>
+    <div class="image-container">
+        <img id="displayedImage7" src="cookingmama/veggiessimmered.jpeg" alt="veggiessimmered">
+        <div class="image-text" id="text7">Simmered vegetables!</div>
+    </div>
+    <div class="image-container">
+        <img id="displayedImage8" src="cookingmama/veggiesbaked.jpeg" alt="veggiesbaked">
+        <div class="image-text" id="text8">Vegetable terrine!</div>
+    </div>
+    <div class="image-container">
+        <img id="displayedImage9" src="cookingmama/veggiesgrilled1.webp" alt="veggiegrilled">
+        <div class="image-text" id="text9">Grilled vegetable dumplings!</div>
+    </div>
+    <div class="image-container">
+        <img id="displayedImage10" src="cookingmama/veggiesfried.jpeg" alt="veggiesfried">
+        <div class="image-text" id="text10">Pan-fried vegetables!</div>
+    </div>
+    <div class="image-container">
+        <img id="displayedImage11" src="cookingmama/seafoodbaked.jpeg" alt="seafoodbaked">
+        <div class="image-text" id="text11">Salt-baked sea bream!</div>
+    </div>
+    <div class="image-container">
+        <img id="displayedImage12" src="cookingmama/seafoodgrilled.jpeg" alt="seafoodgrilled">
+        <div class="image-text" id="text12">Grilled seafood!</div>
+    </div>
+    <div class="image-container">
+        <img id="displayedImage13" src="cookingmama/seafoodfried.jpeg" alt="seafoodfried">
+        <div class="image-text" id="text13">Assorted fried seafood!</div>
+    </div>
+    <div class="image-container">
+        <img id="displayedImage14" src="cookingmama/seafoodsimmered1.jpeg" alt="seafoodsimmered">
+        <div class="image-text" id="text14">Simmered seafood dumplings!</div>
+    </div>
+    <div class="image-container1">
+        <img id="displayedImage15" src="angrymama.gif" alt="failangrymama">
+        <div class="image-text" id="text15">Please enter a valid letter (A-Z) for food and (B, S, G, F) for preparation.
+        </div>
+    </div>
+
+    <div class="ds">
+        <img src="cookingmama/whiteds.jpeg">
+    </div>
+    <div class="topscreen">
+        <img src="topscreen.gif" alt="topscreen">
+    </div>
+    <!-- <div class="music">
+        <video src="https://youtu.be/m5GH9xyneTg"> </video>
+    </div> -->
 
 </body>
 

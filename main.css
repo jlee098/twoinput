@@ -1,190 +1,189 @@
- /* STYLE FOR THE INPUT FIELD */
- #charInput1 {
-     width: 150px;
-     height: 150px;
-     font-size: 60px;
-     text-align: center;
-     margin: 5px;
-     margin-top: 5em;
-     margin-left: 30px;
-     border: 2px solid #ccc;
-     border-radius: 20px;
-     outline: none;
-     transition: 0.3s;
-     background-color: #fff;
-     z-index: 4;
- }
+.bottomscreen {
+    position: absolute;
+    bottom: 62.2%;
+    /* Adjust to place above the bottom screen */
+    left: 46.4%;
+    /* Center the inputs horizontally */
+    transform: translate(-50%, 0);
+    width: 23%;
+    /* Adjust size to fit better */
+    max-width: 345px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    z-index: 1000;
+    background: transparent;
+    font-size: 16px;
+    font-family: "Tiny5", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(0, 0, 0);
 
- #charInput2 {
-     width: 150px;
-     height: 150px;
-     font-size: 60px;
-     text-align: center;
-     margin: 5px;
-     border: 2px solid #ccc;
-     border-radius: 20px;
-     outline: none;
-     transition: 0.3s;
-     background-color: #fff;
-     z-index: 4;
- }
+}
 
- /* STYLE FOR THE SUBMIT BUTTON */
- #submitButton {
-     border: none;
-     padding: 10px 20px;
-     font-size: 16px;
-     margin: 30px;
-     border-radius: 10px;
-     cursor: pointer;
-     transition: 0.3s;
-     z-index: 4;
-     align-items: center;
- }
+/* Input box styling */
+#charInput1,
+#charInput2 {
+    width: 30px;
+    height: 20px;
+    text-align: center;
+    border: 2.5px solid #000000;
+    border-radius: 7px;
+    outline: none;
+    background-color: #ffffff;
+    z-index: 999;
 
- /* STYLE FOR THE IMAGE */
- #displayedImage1,
- #displayedImage2,
- #displayedImage3,
- #displayedImage4,
- #displayedImage5,
- #displayedImage6,
- #displayedImage7,
- #displayedImage8,
- #displayedImage9,
- #displayedImage10,
- #displayedImage11,
- #displayedImage12,
- #displayedImage13,
- #displayedImage14,
- #displayedImage15,
- #displayedImage16,
- #displayedImage17,
- #displayedImage18,
- #displayedImage19,
- #displayedImage20,
- #displayedImage21,
- #displayedImage22,
- #displayedImage23,
- #displayedImage24,
- #displayedImage25,
- #displayedImage26,
- #displayedImage27 {
-     display: none;
-     width: 52%;
-     margin-top: -29em;
-     max-height: 100vh;
-     object-fit: contain;
-     margin-left: 48.8em;
-     transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-     z-index: 5;
- }
+}
 
- .show-image {
-     opacity: 1;
-     visibility: visible;
- }
+/* Submit button styling */
+#submitButton {
+    position: absolute;
+    bottom: -18px;
+    left: 126.5px;
+    transform: translateX(-50%);
+    padding: 4px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    border: 2.5px solid #000000;
+    cursor: pointer;
+    background-color: #f7bc57;
+    color: rgb(5, 4, 4);
+    z-index: 999;
+    font-family: "Tiny5", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 
- body {
-     background-color: whitesmoke;
-     overflow-x: hidden;
-     overflow-y: hidden;
- }
+}
 
- .title {
-     font-size: 1.25em;
-     color: rgb(70, 70, 70);
-     position: absolute;
-     top: 15px;
-     margin-left: 60rem;
-     width: auto;
-     height: auto;
-     z-index: 7;
-     font-family: "roboto", sans-serif;
-     font-weight: 500;
-     font-style: normal;
- }
+/* Style for the displayed images */
+#displayedImage1,
+#displayedImage2,
+#displayedImage3,
+#displayedImage4,
+#displayedImage5,
+#displayedImage6,
+#displayedImage7,
+#displayedImage8,
+#displayedImage9,
+#displayedImage10,
+#displayedImage11,
+#displayedImage12,
+#displayedImage13,
+#displayedImage14 {
+    display: none;
+    position: absolute;
+    /* Place images in the bottom screen area */
+    bottom: -19.5em;
+    /* Adjust bottom position */
+    left: 23.3em;
+    /* Center images horizontally */
+    transform: translateX(-50%);
+    width: 500px;
+    height: 256.7px;
+    object-fit: contain;
+    z-index: 5;
+}
 
- .red {
-     width: 15px;
-     height: 15px;
-     background-color: red;
-     border-radius: 50%;
-     display: inline-block;
-     z-index: 999;
-     position: absolute;
-     top: 19px;
-     /* Position inside grey bar */
-     left: 54.5em;
-     /* Adjust for alignment */
- }
+#displayedImage15 {
+    display: none;
+    position: absolute;
+    height: 255.5px;
+    width: 343.5px;
+    left: 12.5em;
+    top: 3.4em;
+    z-index: 10000;
+}
 
- .yellow {
-     width: 15px;
-     height: 15px;
-     background-color: darkorange;
-     border-radius: 50%;
-     display: inline-block;
-     z-index: 999;
-     position: absolute;
-     top: 19px;
-     left: 56em;
+.show-image {
+    opacity: 1;
+    visibility: visible;
+}
 
- }
+/* for describing food hover text  */
+.image-container,
+.image-container1 {
+    position: relative;
+    display: inline-block;
+}
 
- .green {
-     width: 15px;
-     height: 15px;
-     background-color: limegreen;
-     border-radius: 50%;
-     display: inline-block;
-     z-index: 999;
-     position: absolute;
-     top: 19px;
-     left: 57.5em;
- }
+.image-text {
+    display: none;
+    position: absolute;
+    top: 17em;
+    left: 23.36em;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px;
+    font-size: 16px;
+    font-family: "Tiny5", sans-serif;
+    font-weight: 400;
+    z-index: 10000;
+    align-items: center;
+}
 
- .greybar {
-     top: 0;
-     left: 53em;
-     width: 100vw;
-     height: 55px;
-     background: lightgrey;
-     position: fixed;
-     z-index: 5;
-     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
- }
+.image-container:hover .image-text {
+    display: block;
+    width: 335px;
+}
 
- .greycolumnleft {
-     top: 0;
-     margin-left: 52.5em;
-     width: 65px;
-     height: 100vh;
-     background: grey;
-     position: absolute;
-     z-index: 1;
-     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
- }
+.image-container1:hover .image-text {
+    display: block;
+    width: 335.5px;
+    height: 30px;
+    left: 23.3em;
+    top: 16em;
+}
 
- .greycolumnright {
-     top: 0;
-     right: 0;
-     width: 65px;
-     height: 100vh;
-     background: grey;
-     position: absolute;
-     z-index: 2;
-     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
- }
+.image-container img {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+}
 
- .instructions {
-     font-family: "roboto", sans-serif;
-     font-weight: 500;
-     font-style: normal;
-     font-size: 1.9em;
-     margin-bottom: 30em;
-     position: absolute;
-     margin-left: 30px;
-     display: block;
-     visibility: visible;
- }
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: white;
+}
+
+.ds img {
+    position: relative;
+    width: auto;
+    /* Fit the entire screen width */
+    height: 100vh;
+    /* Fit the entire screen height */
+    object-fit: contain;
+    margin-right: 5px;
+    margin-bottom: 1em;
+    z-index: 1;
+}
+
+/* styling top screen of ds) */
+.topscreen {
+    position: absolute;
+    top: 7.6%;
+    /* Adjust to match the DS screen position */
+    left: 49.76%;
+    transform: translate(-50%, 0);
+    width: 22.8%;
+    /* Adjust width to fit screen */
+    max-width: 345px;
+    max-height: 50px;
+    /* Ensure it stays inside */
+    z-index: 10;
+    /* Ensure it's on top */
+}
+
+/* styling for top screen images */
+.topscreen img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
